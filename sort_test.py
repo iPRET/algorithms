@@ -9,7 +9,7 @@ def single_test(func, arr):
   if python_res != func_res:
     print("Problem encountered while testing:")
     print("Input: ", arr)
-    print("Result:", arr)
+    print("Result:", func_res)
     print("Stopping testing.")
     exit()
 
