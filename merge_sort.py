@@ -29,8 +29,7 @@ def merge_sort(arr: list) -> list:
     return result
 
 
-test = [5, 1, 7, 4, 3, 2, 6, 8, 9, 10]
-
-print("Original:", test)
-print("Sorted  :", merge_sort(test))
-      
+if __name__ == "__main__":
+  import sort_test
+  
+  sort_test.test_sort(bubble_sort)
