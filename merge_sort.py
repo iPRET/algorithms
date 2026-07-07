@@ -32,4 +32,4 @@ def merge_sort(arr: list) -> list:
 if __name__ == "__main__":
   import sort_test
   
-  sort_test.test_sort(bubble_sort)
+  sort_test.test_sort(merge_sort)
