@@ -36,7 +36,7 @@ def radix(arr):
     cumulative.append(cumulative[-1] + c)
   
   for num in tmparr:
-    radix = num & radix2
+    radix = (num & radix2) >> 16
     arr[cumulative[radix]] = num
     cumulative[radix]+= 1
   
