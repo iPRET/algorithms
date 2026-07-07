@@ -38,13 +38,13 @@ def test_sort(func):
   random.seed(42)
   for i in range(1000):
     test_len = random.randint(3, 16)
-    numbers = [i for i in range(test_len)]
+    numbers = [j for j in range(test_len)]
     random.shuffle(numbers)
     single_test(func, numbers)
   
   for i in range(1000):
     test_len = random.randint(3, 16)
-    numbers = [random.randint(1, 5) for i in range(test_len)]
+    numbers = [random.randint(1, 5) for j in range(test_len)]
     single_test(func, numbers)
   
   print("Tests passed!")
